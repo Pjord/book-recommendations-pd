@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grāmatu vērtēšana</title>
-    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
+    <form action="submit.php" method="POST">
       <label for="name">Vārds:</label><br />
       <input type="text" id="name" name="name" /><br />
       <label for="lname">Uzvārds:</label><br />
@@ -24,6 +24,7 @@
       <input type="text" id="nosaukums" name="nosaukums" /><br />
       <label for="apraksts">Apraksts</label><br />
       <textarea name="apraksts"></textarea><br />
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
